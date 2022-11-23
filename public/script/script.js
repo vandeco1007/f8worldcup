@@ -17,6 +17,12 @@ team.forEach((item)=>{
     }
 })
 
+score.forEach((item)=>{
+    if(item.getAttribute('state')=='end'){
+        item.disabled = true;
+    }
+})
+
 choices.forEach((choice)=>{
     choice.disabled=true
 })
