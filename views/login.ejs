@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <div class="form-container">
+            <div id="sign-up" class="form-group">
+                <form id="login-form" action="/account/signup" method="POST">
+                    <div class="form-field">
+                        <label for="username">Tên Đăng Nhập</label>
+                        <input type="text" name="username" id="username" class="input-group">
+                    </div>
+                    <div class="form-field">
+                        <label for="username">Mật khẩu</label>
+                        <input type="text" name="password" id="password" class="input-group">
+                    </div>
+                    <div class="btn-group">
+                        <button id="login-btn">Đăng Ký</button>
+                    </div>
+                </form>
+            </div>
+            <div id="login" class="form-group">
+                <form id="login-form" action="/account/login" method="POST">
+                    <div class="form-field">
+                        <label for="username">Tên Đăng Nhập</label>
+                        <input type="text" name="username" id="username" class="input-group">
+                    </div>
+                    <div class="form-field">
+                        <label for="username">Mật khẩu</label>
+                        <input type="text" name="password" id="password" class="input-group">
+                    </div>
+                    <div class="btn-group">
+                        <button id="register-btn">Đăng Nhập</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/script/login.js"></script>
+</html>
