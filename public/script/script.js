@@ -1,25 +1,17 @@
 let end = document.querySelectorAll('.end');
-let team = document.querySelectorAll('.team');
 let choices = document.querySelectorAll('.choices')
+let team = document.querySelectorAll('.team')
 let score = document.querySelectorAll('.score')
-
-end.forEach((item)=>{
-    item.disabled = true;
-    item.style.filter = "grayscale(100%)"
-    item.style.color = "gray"
-    
-})
 
 team.forEach((item)=>{
     if(item.getAttribute('state')=='end'){
-        item.disabled = true;
         item.style.filter = "grayscale(100%)"
     }
 })
 
-score.forEach((item)=>{
-    if(item.getAttribute('state')=='end'){
-        item.disabled = true;
+score.forEach((items)=>{
+    if(items.getAttribute('state')=='end'){
+        items.disabled=true
     }
 })
 
@@ -30,4 +22,3 @@ choices.forEach((choice)=>{
 score.forEach((score)=>{
     score.value=0
 })
-

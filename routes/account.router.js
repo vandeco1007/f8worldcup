@@ -4,10 +4,18 @@ const {
     signup,
     login
 } = require('../controllers/account.controller')
+
 const {
     getData,
     deleteData
 } = require('../controllers/data.controller')
+
+const {
+    getOption,
+    createOption,
+    deleteOption
+} = require('../controllers/matchOption.controller')
+
 const router = express.Router()
 
 router.route('/signup')
@@ -29,6 +37,17 @@ router.route('/admin/data')
 )
 .delete(
     deleteData
+)
+
+router.route('/admin/matchoption')
+.get(
+    getOption
+)
+.post(
+    createOption
+)
+.delete(
+    deleteOption
 )
 
 

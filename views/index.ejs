@@ -16,8 +16,8 @@
             <form class="match-predict-form" action="/match" method="POST">
                 <div class="match current">
                     <div class="team-group">
-                        <div class="team end">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png);">
+                        <div class="team" <%= result.matchStatus1 %>>
+                            <div class="team-flag" <%= result.team1Image %>>
 
                             </div>
                             <h1 class="team-name">Morocco</h1>
@@ -25,13 +25,13 @@
                         <div class="score-board">
                             <h1 class="time" id="team1-coundown"></h1>                                                
                             <div class="score-display">
-                                <input type="text" class="score end"  name="team1score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus1 %> type="text" class="score"  name="team1score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input type="text" class="score end"  name="team2score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus1 %> type="text" class="score"  name="team2score" placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
-                        <div class="team end">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flag_of_Banate_of_Croatia_%281939-1941%29.svg/3000px-Flag_of_Banate_of_Croatia_%281939-1941%29.svg.png);">
+                        <div class="team" <%= result.matchStatus1 %>>
+                            <div class="team-flag" <%= result.team2Image %>>
 
                             </div>
                             <h1 class="team-name">Croatia</h1>
@@ -40,8 +40,8 @@
                 </div>
                 <div class="match">
                     <div class="team-group">
-                        <div class="team end">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Germany_as_seen_in_Tagesschau.jpg);">
+                        <div class="team" <%= result.matchStatus2 %>>
+                            <div class="team-flag"  <%= result.team3Image %>>
 
                             </div>
                             <h1 class="team-name">Đức</h1>
@@ -49,13 +49,13 @@
                         <div class="score-board">    
                             <h1 class="time" id="team2-coundown"></h1>  
                             <div class="score-display">    
-                                <input type="text" class="score end" name="team3score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus2 %> type="text" class="score" name="team3score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input type="text" class="score end" name="team4score"  placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus2 %> type="text" class="score" name="team4score"  placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
-                        <div class="team end">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/2560px-Flag_of_Japan.svg.png);">
+                        <div class="team" <%= result.matchStatus2 %>>
+                            <div class="team-flag"  <%= result.team4Image %>>
 
                             </div>
                             <h1 class="team-name">Nhật Bản</h1>
@@ -64,8 +64,8 @@
                 </div>
                 <div class="match">
                     <div class="team-group">
-                        <div class="team">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png);">
+                        <div class="team" <%= result.matchStatus3 %>>
+                            <div class="team-flag"  <%= result.team5Image %>>
 
                             </div>
                             <h1 class="team-name">Tây Ban Nha</h1>
@@ -73,13 +73,13 @@
                         <div class="score-board">  
                             <h1 class="time" id="team3-coundown"></h1>
                             <div class="score-display">    
-                                <input type="text" class="score" name="team5score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus3 %> type="text" class="score" name="team5score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input type="text" class="score" name="team6score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus3 %> type="text" class="score" name="team6score" placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
-                        <div class="team">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Flag_of_Costa_Rica_%281848-1906%29.svg/2560px-Flag_of_Costa_Rica_%281848-1906%29.svg.png);">
+                        <div class="team"<%= result.matchStatus3 %>>
+                            <div class="team-flag" <%= result.team6Image %>>
 
                             </div>
                             <h1 class="team-name">Costa Rica</h1>
@@ -88,8 +88,8 @@
                 </div>
                 <div class="match">
                     <div class="team-group">
-                        <div class="team">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Flag_of_Belgium.svg/2363px-Flag_of_Belgium.svg.png);">
+                        <div class="team"<%= result.matchStatus4 %>>
+                            <div class="team-flag" <%= result.team7Image %>>
 
                             </div>
                             <h1 class="team-name">Bỉ</h1>
@@ -97,13 +97,13 @@
                         <div class="score-board">  
                             <h1 class="time" id="team4-coundown"></h1>
                             <div class="score-display">    
-                                <input type="text" class="score" name="team7score" value=0  placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus4 %> type="text" class="score" name="team7score" value=0  placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input type="text" class="score" name="team8score" value=0 placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus4 %> type="text" class="score" name="team8score" value=0 placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
-                        <div class="team">
-                            <div class="team-flag" style="background: url(https://upload.wikimedia.org/wikipedia/commons/b/b6/Flag_of_Canada.png);">
+                        <div class="team"<%= result.matchStatus4 %>>
+                            <div class="team-flag" <%= result.team8Image %>>
 
                             </div>
                             <h1 class="team-name">Canada</h1>
