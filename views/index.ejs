@@ -23,6 +23,7 @@
                             <h1 class="team-name">Morocco</h1>
                         </div>
                         <div class="score-board">
+                            <div id="timmer1" style="display:none"><%= result.starTime1 %></div>
                             <h1 class="time" id="team1-coundown"></h1>                                                
                             <div class="score-display">
                                 <input <%= result.matchStatus1 %> type="text" class="score"  name="team1score" placeholder="0" onClick="this.select();"/>
@@ -47,6 +48,7 @@
                             <h1 class="team-name">Đức</h1>
                         </div>
                         <div class="score-board">    
+                            <div id="timmer2" style="display:none"><%= result.starTime2 %></div>
                             <h1 class="time" id="team2-coundown"></h1>  
                             <div class="score-display">    
                                 <input <%= result.matchStatus2 %> type="text" class="score" name="team3score" placeholder="0" onClick="this.select();"/>
@@ -71,6 +73,7 @@
                             <h1 class="team-name">Tây Ban Nha</h1>
                         </div>
                         <div class="score-board">  
+                            <div id="timmer3" style="display:none"><%= result.starTime3 %></div>
                             <h1 class="time" id="team3-coundown"></h1>
                             <div class="score-display">    
                                 <input <%= result.matchStatus3 %> type="text" class="score" name="team5score" placeholder="0" onClick="this.select();"/>
@@ -95,6 +98,7 @@
                             <h1 class="team-name">Bỉ</h1>
                         </div>
                         <div class="score-board">  
+                            <div id="timmer4" style="display:none"><%= result.starTime4 %></div>
                             <h1 class="time" id="team4-coundown"></h1>
                             <div class="score-display">    
                                 <input <%= result.matchStatus4 %> type="text" class="score" name="team7score" value=0  placeholder="0" onClick="this.select();"/>
