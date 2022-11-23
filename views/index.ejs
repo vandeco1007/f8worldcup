@@ -20,22 +20,22 @@
                             <div class="team-flag" <%= result.team1Image %>>
 
                             </div>
-                            <h1 class="team-name">Morocco</h1>
+                            <h1 class="team-name"><%= result.team1Name %></h1>
                         </div>
                         <div class="score-board">
                             <div id="timmer1" style="display:none"><%= result.starTime1 %></div>
                             <h1 class="time" id="team1-coundown"></h1>                                                
                             <div class="score-display">
-                                <input <%= result.matchStatus1 %> type="text" class="score"  name="team1score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus1 %> required type="text" class="score"  name="team1score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input <%= result.matchStatus1 %> type="text" class="score"  name="team2score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus1 %> required type="text" class="score"  name="team2score" placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
                         <div class="team" <%= result.matchStatus1 %>>
                             <div class="team-flag" <%= result.team2Image %>>
 
                             </div>
-                            <h1 class="team-name">Croatia</h1>
+                            <h1 class="team-name"><%= result.team2Name %></h1>
                         </div>
                     </div>
                 </div>
@@ -45,22 +45,22 @@
                             <div class="team-flag"  <%= result.team3Image %>>
 
                             </div>
-                            <h1 class="team-name">Đức</h1>
+                            <h1 class="team-name"><%= result.team3Name %></h1>
                         </div>
                         <div class="score-board">    
                             <div id="timmer2" style="display:none"><%= result.starTime2 %></div>
                             <h1 class="time" id="team2-coundown"></h1>  
                             <div class="score-display">    
-                                <input <%= result.matchStatus2 %> type="text" class="score" name="team3score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus2 %> required type="text" class="score" name="team3score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input <%= result.matchStatus2 %> type="text" class="score" name="team4score"  placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus2 %> required type="text" class="score" name="team4score"  placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
                         <div class="team" <%= result.matchStatus2 %>>
                             <div class="team-flag"  <%= result.team4Image %>>
 
                             </div>
-                            <h1 class="team-name">Nhật Bản</h1>
+                            <h1 class="team-name"><%= result.team4Name %></h1>
                         </div>
                     </div>
                 </div>
@@ -70,22 +70,22 @@
                             <div class="team-flag"  <%= result.team5Image %>>
 
                             </div>
-                            <h1 class="team-name">Tây Ban Nha</h1>
+                            <h1 class="team-name"><%= result.team5Name %></h1>
                         </div>
                         <div class="score-board">  
                             <div id="timmer3" style="display:none"><%= result.starTime3 %></div>
                             <h1 class="time" id="team3-coundown"></h1>
                             <div class="score-display">    
-                                <input <%= result.matchStatus3 %> type="text" class="score" name="team5score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus3 %> required type="text" class="score" name="team5score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input <%= result.matchStatus3 %> type="text" class="score" name="team6score" placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus3 %> required type="text" class="score" name="team6score" placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
                         <div class="team"<%= result.matchStatus3 %>>
                             <div class="team-flag" <%= result.team6Image %>>
 
                             </div>
-                            <h1 class="team-name">Costa Rica</h1>
+                            <h1 class="team-name"><%= result.team6Name %></h1>
                         </div>
                     </div>
                 </div>
@@ -95,22 +95,22 @@
                             <div class="team-flag" <%= result.team7Image %>>
 
                             </div>
-                            <h1 class="team-name">Bỉ</h1>
+                            <h1 class="team-name"><%= result.team7Name %></h1>
                         </div>
                         <div class="score-board">  
                             <div id="timmer4" style="display:none"><%= result.starTime4 %></div>
                             <h1 class="time" id="team4-coundown"></h1>
                             <div class="score-display">    
-                                <input <%= result.matchStatus4 %> type="text" class="score" name="team7score" value=0  placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus4 %> required type="text" class="score" name="team7score" placeholder="0" onClick="this.select();"/>
                                 <div class="space-between">-</div>
-                                <input <%= result.matchStatus4 %> type="text" class="score" name="team8score" value=0 placeholder="0" onClick="this.select();"/>
+                                <input <%= result.matchStatus4 %> required type="text" class="score" name="team8score" placeholder="0" onClick="this.select();"/>
                             </div>
                         </div>
                         <div class="team"<%= result.matchStatus4 %>>
                             <div class="team-flag" <%= result.team8Image %>>
 
                             </div>
-                            <h1 class="team-name">Canada</h1>
+                            <h1 class="team-name"><%= result.team8Name %></h1>
                         </div>
                     </div>
                 </div>
